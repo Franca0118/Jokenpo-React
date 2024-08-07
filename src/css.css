@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: rgb(74, 215, 250);
+    overflow-x: hidden;
+}
+#divBase{
+    width: 100vw;
+    height: 80vh;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#divBase button{
+    width: 30vw;
+    height: 7vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    transition: .2s;
+    background: white;
+    animation: botoes_esquerda_pra_direita .4s;
+}
+
+#divBase button~button{
+    animation: botoes_direita_pra_esquerda .4s;
+}
+
+#divBase button:hover{
+    background: rgb(9, 153, 248);
+    scale: 0.98;
+}
+
+#jogoMaquina{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px ;
+}
+
+
+#jogoMaquina button{
+    height: 5vh;
+    width: 10vw;
+    font-size: 20px;
+    background: white;
+    transition: .2s;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#jogoMaquina button:hover{
+    background: rgb(9, 153, 248);
+    scale: 0.98;
+}
+
+#jogoMaquina img{
+    border-radius: 10px;
+    border: 3px solid rgb(9, 153, 248);
+    width: 10vw;
+    height: 10vw;
+}
+
+#jogoMaquina span{
+    width: 30vw;
+}
+
+#jogoMaquina span~span~span{
+    text-align: right;
+}
+
+#jogoMaquina span~span{
+    text-align: center;
+}
+
+#botoesPartida{
+    display: flex;
+    flex-direction: column;
+}
+
+#botoesPartida section{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes botoes_esquerda_pra_direita{
+    0%{
+        margin-left: 100vw;
+    } 
+    100%{
+        margin-left: 0vw;
+    }
+
+}
+@keyframes botoes_direita_pra_esquerda{
+    0%{
+        margin-right: 100vw;
+    } 
+    100%{
+        margin-right: 0vw;
+    }
+}
