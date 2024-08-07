@@ -30,7 +30,7 @@ let jogoMaquina = async () => {
             }
         });
     }
-    document.querySelector("#jogomaquinap1").src = `../src/${jogadorSelect}.png`
+    document.querySelector("#jogomaquinap1").src = `${jogadorSelect}.png`
     let maquina = document.querySelector("#jogomaquinap2")
 
     let num = 1
@@ -41,15 +41,15 @@ let jogoMaquina = async () => {
 
         switch (num) {
             case 1:
-                maquina.src = '../src/pedra.png'
+                maquina.src = 'pedra.png'
                 break
 
             case 2:
-                maquina.src = '../src/papel.png'
+                maquina.src = 'papel.png'
                 break
 
             case 3:
-                maquina.src = '../src/tesoura.png'
+                maquina.src = 'tesoura.png'
                 break
         }
         num++
@@ -65,17 +65,17 @@ let jogoMaquina = async () => {
         switch (maquinaran) {
             case 1:
                 maquinaran = 'pedra'
-                maquina.src = '../src/pedra.png'
+                maquina.src = 'pedra.png'
                 break
 
             case 2:
                 maquinaran = 'papel'
-                maquina.src = '../src/papel.png'
+                maquina.src = 'papel.png'
                 break
 
             case 3:
                 maquinaran = 'tesoura'
-                maquina.src = '../src/tesoura.png'
+                maquina.src = 'tesoura.png'
                 break
         }
         if (
@@ -113,7 +113,7 @@ var JogoComMaquina = (
             <span>
                 <h1 id="p_pontostxt">Pontos: 0</h1>
                 <h2>sua escolha</h2>
-                <img id="jogomaquinap1" src="../src/i.png" />
+                <img id="jogomaquinap1" src="i.png" />
             </span>
 
 
@@ -131,7 +131,7 @@ var JogoComMaquina = (
             <span>´
                 <h1 id="maquina_pontostxt">Pontos: 0</h1>
                 <h2>escolha da maquina</h2>
-                <img id="jogomaquinap2" src="../src/i.png" />
+                <img id="jogomaquinap2" src="i.png"/>
             </span>
         </div>
     )
@@ -186,8 +186,8 @@ let jogocom1v1 = async () => {
     }
 
 
-    document.querySelector("#jogop1p2_p1_img").src = `../src/${p1}.png`
-    document.querySelector("#jogop1p2_p2_img").src = `../src/${p2}.png`
+    document.querySelector("#jogop1p2_p1_img").src = `${p1}.png`
+    document.querySelector("#jogop1p2_p2_img").src = `${p2}.png`
     console.log(p1)
     console.log(p2)
     if (
@@ -220,7 +220,7 @@ var JogoComJogador = (
             <span>
                 <h1 id="p1pontostxt">Pontos: 0</h1>
                 <h2>jogador 1</h2>
-                <img id="jogop1p2_p1_img" src="../src/i.png" />
+                <img id="jogop1p2_p1_img" src="i.png" />
             </span>
 
 
@@ -235,7 +235,7 @@ var JogoComJogador = (
             <span>´
                 <h1 id="p2pontostxt">Pontos: 0</h1>
                 <h2>jogador 2</h2>
-                <img id="jogop1p2_p2_img" src="../src/i.png" />
+                <img id="jogop1p2_p2_img" src="i.png" />
             </span>
         </div>
     )
